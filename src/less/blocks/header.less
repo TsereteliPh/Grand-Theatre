@@ -1,0 +1,303 @@
+.header {
+    position: relative;
+
+    min-height: 600px;
+    padding: 50px 33px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        opacity: 0.15;
+        z-index: -1;
+
+        background: url('../img/TheatreInside-desktop.jpg') 50%/cover;
+    }
+
+    @media (min-width: @tablet-width) {
+        min-height: 800px;
+    }
+
+    @media (min-width: @tablet-large) {
+        min-height: 1045px;
+        padding: 50px 0;
+    }
+
+
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 40px;
+}
+
+.nav__hamb {
+    @media (min-width: @tablet-large) {
+        display: none;
+    }
+}
+
+.nav__button {
+    border: none;
+    background-color: transparent;
+
+    &:hover path {
+        fill: #D1A954;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.nav__list {
+    display: none;
+
+    @media (min-width: @tablet-large) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 820px;
+    }
+}
+
+.js-header-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+    margin: 30px 0 50px 40px;
+
+    @media (min-width: @tablet-width) {
+        margin: 80px 0 90px 40px;
+    }
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+        color: #D1A954;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+.nav__numb {
+    border-bottom: 2px solid #D1A954;
+
+    & a {
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    @media (min-width: @tablet-large) and (max-width: calc(@desktop-width - 1px)) {
+        display: none;
+    }
+}
+
+.nav__contacts {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    width: 150px;
+    height: 100%;
+    padding-bottom: 85px;
+
+    background-color: fade(#333333, 75);
+
+    @media (min-width: @tablet-large) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.contact__text {
+    padding-top: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    color: #c4c4c4;
+
+    transform: rotate(180deg);
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 8px;
+
+        width: 3px;
+        height: 80px;
+
+        background-color: #c4c4c4;
+    }
+}
+
+.contact__links {
+    @media (min-width: @tablet-large) {
+        max-width: 26px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+        & path {
+            fill: #c4c4c4;
+        }
+
+        & a:not(.contact__fb) {
+            max-width: 26px;
+        }
+
+        & a svg {
+            max-width: 100%;
+        }
+
+        & a:hover path {
+            fill: #D1A954;
+        }
+
+        & a:active {
+            opacity: 0.7;
+        }
+    }
+}
+
+.js-header-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    width: 140px;
+    margin: 0 auto;
+}
+
+.contact__fb {
+    order: -1;
+
+    @media (min-width: @tablet-large) {
+        order: 0;
+        width: 15px;
+        height: auto;
+    }
+}
+
+.contact__vk {
+    order: 10;
+
+    @media (min-width: @tablet-large) {
+        order: 0;
+    }
+}
+
+.nav__popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 100%;
+
+    background-color: #333333;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+
+.nav__popup--hidden {
+    transform: translateX(-100%);
+    transition: all 0.4s ease-out;
+}
+
+.cross-btn {
+    width: 32px;
+    height: 32px;
+    margin-left: 240px;
+    margin-top: 52px;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover path {
+        fill: #D1A954;
+    }
+
+    &:active path {
+        opacity: 0.4;
+    }
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 115px;
+
+    @media (min-width: @tablet-width) {
+        margin-top: 160px;
+    }
+
+    @media (min-width: @tablet-large) {
+        margin-top: 220px;
+    }
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 540px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.header__caption {
+    width: 100%;
+
+    font-size: 8.5vw;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: 650px) {
+        font-size: 56px;
+    }
+}
+
+
+
+.header__slider {
+    display: none;
+}
