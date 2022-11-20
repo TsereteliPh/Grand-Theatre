@@ -1,0 +1,103 @@
+.about {
+    margin-top: 80px;
+
+    @media (min-width: @tablet-width) {
+        margin-top: 90px;
+    }
+
+    @media (min-width: @tablet-large) {
+        margin-top: 150px;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    @media (min-width: @tablet-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+.about__caption {
+    margin-bottom: 40px;
+
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+        text-align: left;
+    }
+}
+
+.about__text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        text-align: left;
+    }
+}
+
+.about__theatre,
+.about__numbers {
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: column;
+        min-height: 275px;
+    }
+}
+
+.about__numbers {
+    width: 320px;
+
+    @media (min-width: @tablet-width) {
+        width: auto;
+        min-width: 210px;
+    }
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.about__places,
+.about__years {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    @media (min-width: @tablet-width) {
+        align-items: flex-start;
+    }
+}
+
+.about__fact {
+    font-size: 16px;
+
+    &--colored {
+        color: #D1A954;
+    }
+}
+
+.about__img {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+        display: initial;
+    }
+}

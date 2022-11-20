@@ -1,8 +1,9 @@
 .header {
     position: relative;
 
+    width: 100%;
     min-height: 600px;
-    padding: 50px 33px;
+    padding-top: 50px;
 
     &::before {
         content: "";
@@ -25,7 +26,6 @@
 
     @media (min-width: @tablet-large) {
         min-height: 1045px;
-        padding: 50px 0;
     }
 
 
@@ -89,8 +89,7 @@
 }
 
 .nav__link {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
@@ -109,7 +108,6 @@
 
     & a {
         font-size: 16px;
-        font-weight: 700;
         text-decoration: none;
         color: #ffffff;
     }
@@ -142,7 +140,8 @@
 
 .contact__text {
     padding-top: 120px;
-    font-weight: 700;
+
+    font-size: 18px;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     color: #c4c4c4;
@@ -169,18 +168,15 @@
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 30px;
+
+        & svg {
+            max-width: 100%;
+        }
 
         & path {
             fill: #c4c4c4;
-        }
-
-        & a:not(.contact__fb) {
-            max-width: 26px;
-        }
-
-        & a svg {
-            max-width: 100%;
         }
 
         & a:hover path {
@@ -209,8 +205,10 @@
 
     @media (min-width: @tablet-large) {
         order: 0;
-        width: 15px;
-        height: auto;
+
+        & svg {
+            height: 26px;
+        }
     }
 }
 
@@ -261,8 +259,9 @@
 .header__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 115px;
+    align-items: center;
+    margin-top: 110px;
+    min-width: 0;
 
     @media (min-width: @tablet-width) {
         margin-top: 160px;
@@ -270,6 +269,11 @@
 
     @media (min-width: @tablet-large) {
         margin-top: 220px;
+    }
+
+    @media (min-width: @desktop-width) {
+        max-width: 1110px;
+        margin: 190px auto 0;
     }
 }
 
@@ -281,23 +285,34 @@
     max-width: 540px;
     min-height: 300px;
     margin: 0 auto;
+
+    @media (min-width: @desktop-width) {
+        margin: 0;
+    }
 }
 
 .header__caption {
     width: 100%;
 
-    font-size: 8.5vw;
+    font-size: 12.2vw;
     line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
 
     @media (min-width: 650px) {
-        font-size: 56px;
+        font-size: 64px;
     }
 }
 
-
+.header__info {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
 
 .header__slider {
     display: none;
+}
+
+.perf-slider__img {
+    box-shadow: 20px 20px 0 0 #D1A954;
 }

@@ -63,7 +63,7 @@
             </div>
         </nav>
 
-        <div class="header__content">
+        <div class="container header__content">
             <div class="header__text">
                 <h1 class="header__caption">Большой театр</h1>
 
@@ -84,41 +84,67 @@
         <section class="container about">
             <h2 class="main-caption"><span>О</span> театре</h2>
 
-            <div class="about__theatre">
-                <h3 class="about__caption">Самый лучший театр СПб</h3>
+            <div class="about__wrapper">    
+                <div class="about__theatre">
+                    <h3 class="about__caption">Самый лучший театр СПб</h3>
 
-                <p class="about__text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
-            </div>
-
-            <div class="about__numbers">
-                <h3 class="about__caption">Немного о цифрах</h3>
-
-                <div class="about__places place">
-                    <img src="img/icon-armchair.svg" alt="Иконка посадочного кресла">
-
-                    <p class="place__text">
-                        <span class="place__text--colored">1600 </span>
-                        посадочных мест
-                    </p>
+                    <p class="about__text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
                 </div>
 
-                <div class="about__years years">
-                    <img src="img/icon-vip.svg" alt="Иконка сцены театра">
+                <div class="about__numbers">
+                    <h3 class="about__caption">Немного о цифрах</h3>
 
-                    <p class="years__text">
-                        <span class="years__text--colored">350 </span>
-                        лет истории
-                    </p>
+                    <div class="about__info">
+                        <div class="about__places">
+                            <img src="img/icon-armchair.svg" alt="Иконка посадочного кресла">
+
+                            <p class="about__fact">
+                                <span class="about__fact--colored">1600 </span>
+                                посадочных мест
+                            </p>
+                        </div>
+
+                        <div class="about__years">
+                            <img src="img/icon-vip.svg" alt="Иконка сцены театра">
+
+                            <p class="about__fact">
+                                <span class="about__fact--colored">350 </span>
+                                лет истории
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
+            
+            
                 <img class="about__img" src="img/TheatreAbout-desktop.jpg" alt="Фотография фонтана на фоне большого театра">
             </div>
         </section>
 
-        <section class="container production">
+        <section class="production">
             <h2 class="main-caption"><span>Наши</span> постановки</h2>
 
-
+            <div class="container production__wrapper">
+                <ul class="production__slider main-slider">
+                    <li class="main-slider__item" data-reward="Оскар 2020" data-date="Сентябрь 2020">
+                        <img src="img/SliderTheatre1.jpg" alt="Дворцовая площадь" class="main-slider__img">
+                    </li>
+                    <li class="main-slider__item" data-reward="Оскар 2022" data-date="Август 2020">
+                        <img src="img/SliderTheatre2.jpg" alt="Большой театр" class="main-slider__img">
+                    </li>
+                    <li class="main-slider__item" data-reward="Золотой грамофон" data-date="Июль 2020">
+                        <img src="img/SliderTheatre3.jpg" alt="Большой театр внутри" class="main-slider__img">
+                    </li>
+                    <li class="main-slider__item" data-reward="Щелкунчик" data-date="Май 2020">
+                        <img src="img/SliderTheatre4.jpg" alt="Фонтан на фоне Большого татра" class="main-slider__img">
+                    </li>
+                    <li class="main-slider__item" data-reward="Оскар 2022" data-date="Август 2020">
+                        <img src="img/SliderTheatre2.jpg" alt="Большой театр" class="main-slider__img">
+                    </li>
+                    <li class="main-slider__item" data-reward="Золотой грамофон" data-date="Июль 2020">
+                        <img src="img/SliderTheatre3.jpg" alt="Большой театр внутри" class="main-slider__img">
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="awards">
@@ -197,6 +223,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts/libs/slick.min.js"></script>
     <script src="scripts/main.min.js"></script>
 </body>
 </html>
