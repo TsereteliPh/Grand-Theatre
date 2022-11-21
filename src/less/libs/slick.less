@@ -104,8 +104,6 @@
 .header__content {
 
     .slick-slider {
-        position: relative;
-
         display: none;
         width: 390px;
 
@@ -157,3 +155,47 @@
 
 //Кастом оформление основного слайдера
 
+.production__wrapper {
+
+    .slick-slider {
+        height: 620px;
+
+        @media (max-width: 533px) {
+            height: 120vw;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        bottom: 0;
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #c4c4c4;
+
+        border: none;
+        background-color: transparent;
+
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 20;
+
+        &:hover {
+            color: #D1A954;
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+}

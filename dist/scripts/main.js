@@ -25,10 +25,12 @@ cross.click(function () {
 
 });
 if (window.screen.width >= 1410) {
-    $('.perf-slider').slick();
+    $('.perf-slider').slick({
+        
+    });
 
-    $('.header__slider').children('.slick-next').text('След ⟶');
-    $('.header__slider').children('.slick-prev').text('⟵ Пред');
+    $('.header__slider').children('.slick-next').text('След \u27F6');
+    $('.header__slider').children('.slick-prev').text('\u27F5 Пред');
 }
 
 $('.main-slider').slick({
@@ -61,3 +63,6 @@ $('.main-slider').slick({
         }
     ]
 });
+
+$('.production__slider').children('.slick-next').text('След \u27F6');
+$('.production__slider').children('.slick-prev').text('\u27F5 Пред');

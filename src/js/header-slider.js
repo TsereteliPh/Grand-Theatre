@@ -3,6 +3,6 @@ if (window.screen.width >= 1410) {
         
     });
 
-    $('.header__slider').children('.slick-next').text('След ⟶');
-    $('.header__slider').children('.slick-prev').text('⟵ Пред');
+    $('.header__slider').children('.slick-next').text('След \u27F6');
+    $('.header__slider').children('.slick-prev').text('\u27F5 Пред');
 }

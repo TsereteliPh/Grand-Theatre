@@ -27,7 +27,7 @@ const paths = {
 //Функция для очистки финальной папки
 
 function clean() {
-    return del(['dist/**', '!dist/*.html', '!dist/img/**', '!dist/scripts/libs/**', '!dist/fonts/**']);
+    return del(['dist/**', '!dist/*.html', '!dist/img/**', '!dist/libs/**', '!dist/fonts/**']);
 }
 
 //Функция обработки стилей

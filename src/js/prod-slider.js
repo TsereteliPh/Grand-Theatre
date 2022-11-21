@@ -28,3 +28,6 @@ $('.main-slider').slick({
         }
     ]
 });
+
+$('.production__slider').children('.slick-next').text('След \u27F6');
+$('.production__slider').children('.slick-prev').text('\u27F5 Пред');
