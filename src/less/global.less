@@ -90,6 +90,10 @@ ul, ol, dl {
     & span {
         color: #D1A954;
     }
+
+    @media (min-width: @tablet-large) {
+        margin-bottom: 100px;
+    }
 }
 
 .btn {
@@ -105,6 +109,7 @@ ul, ol, dl {
 
     background-color: #D1A954;
     border: none;
+    cursor: pointer;
 
     &:hover {
         color: fade(#ffffff, 40);
@@ -112,5 +117,30 @@ ul, ol, dl {
 
     &:active {
         opacity: 0.9;
+    }
+}
+
+.input {
+    appearance: none;
+
+    height: 35px;
+    padding: 15px;
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #989898;
+
+    background-color: #444444;
+    border: 1px solid #616161;
+
+    &:hover,
+    &:focus {
+        border-color: #D1A954;
+    }
+
+    &:focus-visible {
+        outline: none;
     }
 }
