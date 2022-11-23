@@ -207,6 +207,7 @@ dl {
 .about__years {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 15px;
 }
