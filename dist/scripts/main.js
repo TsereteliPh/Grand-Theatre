@@ -1,3 +1,6 @@
+AOS.init({
+    disable: 'mobile'
+});
 const burger = $('.nav__button');
 const popup = $('.nav__popup');
 const cross = $('.cross-btn');
