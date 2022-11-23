@@ -1,6 +1,10 @@
 AOS.init({
-    disable: 'mobile'
+    disable: function() {
+        let maxWidth = 992;
+        return window.innerWidth < maxWidth;
+      }
 });
+
 const burger = $('.nav__button');
 const popup = $('.nav__popup');
 const cross = $('.cross-btn');
