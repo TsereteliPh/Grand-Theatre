@@ -13,8 +13,8 @@ const contacts = $('.contact__links').clone();
 
 burger.click(function () {
 
-    if (popup.hasClass('nav__popup--hidden')) {
-        popup.removeClass('nav__popup--hidden');
+    if (!popup.hasClass('nav__popup--opened')) {
+        popup.addClass('nav__popup--opened');
         popup.append(menu).append(contacts);
         menu.addClass('js-header-menu');
         contacts.addClass('js-header-contacts');
@@ -24,12 +24,11 @@ burger.click(function () {
 });
 
 cross.click(function () {
-    if (popup.hasClass('nav__popup--hidden')) {
+    if (popup.hasClass('nav__popup--opened')) {
+        popup.removeClass('nav__popup--opened');
+    } else {
         return
-        } else {
-        popup.addClass('nav__popup--hidden');
-        }
-
+    }
 });
 if (window.screen.width >= 1410) {
     $('.perf-slider').slick({

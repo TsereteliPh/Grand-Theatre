@@ -230,12 +230,17 @@
 
     background-color: #333333;
     overflow: hidden;
-    transition: all 0.2s ease-in;
-}
-
-.nav__popup--hidden {
     transform: translateX(-100%);
     transition: all 0.4s ease-out;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.nav__popup--opened {
+    transform: translateX(0);
+    transition: all 0.4s ease-in;
 }
 
 .cross-btn {
